@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@font-face {
+  font-family: poppinsSemibold;
+  src: url(../font/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppinsBold;
+  src: url(../font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: latoBold;
+  src: url(../font/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: latoLight;
+  src: url(../font/Lato-Light.ttf);
+}
+@font-face {
+  font-family: latoRegular;
+  src: url(../font/Lato-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: latoBold;
+}
+
+h2 {
+  font-family: poppinsSemibold;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+p {
+  font-family: latoRegular;
+}
+
+.btn-section {
+  background: rgb(0, 90, 171);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+nav #banner {
+  padding-top: 10px;
+}
+nav #banner #topBar .topBar-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+nav #banner #topBar .topBar-container .topBar-left img {
+  height: 40px;
+  border-radius: 5px;
+}
+nav #banner #topBar .topBar-container .topBar-right #connect {
+  padding: 4px 8px;
+}
+nav #banner #topBar .topBar-container .topBar-right #langage {
+  margin: 0 5px;
+}
+nav #banner #topBar .topBar-container .topBar-right #langage #flag img {
+  height: 10px;
+}
+nav #navigation {
+  background: rgb(29, 57, 143);
+  height: 70px;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+nav #navigation .navigation-container {
+  width: 90%;
+}
+nav #navigation .navigation-container ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+nav #navigation .navigation-container ul li {
+  list-style: none;
+}
+
+header {
+  margin: 40px auto;
+}
+header .header-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+header .header-container .txt {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: whitesmoke;
+}
+header .header-container .txt .txt-container h1 {
+  font-family: poppinsbold;
+  font-size: 3rem;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+header .header-container .txt .txt-container #motivation {
+  font-family: latoRegular;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+header #img {
+  background: url(../image/ESCM.webp) center/cover;
+  height: 500px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+header {
+  margin: 40px auto;
+}
+header .header-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+header .header-container .txt {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: whitesmoke;
+}
+header .header-container .txt .txt-container h1 {
+  font-family: poppinsbold;
+  font-size: 3rem;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+header .header-container .txt .txt-container #motivation {
+  font-family: latoRegular;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+header #img {
+  background: url(../image/ESCM.webp) center/cover;
+  height: 500px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#iuppc h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+#iuppc .contain {
+  width: 90%;
+  margin: 0 auto;
+}
+#iuppc p {
+  line-height: 1.7;
+}
+#iuppc #iuppc-mission {
+  margin-bottom: 30px;
+}
+
+.actualites-section {
+  margin-top: 40px;
+}
+.actualites-section #actualites-intro {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.actualites-section .actualité-container .actualites-cards {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 20px auto;
+}
+.actualites-section .actualité-container .actualites-cards .actualite-card {
+  width: 24%;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+.actualites-section .actualité-container .actualites-cards .actualite-card .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+.actualites-section .actualité-container .actualites-cards .actualite-card h3 {
+  font-family: poppinsSemibold;
+  padding: 10px 0;
+}
+.actualites-section .actualité-container .actualites-cards .actualite-card .date {
+  font-family: latoLight;
+}
+.actualites-section .actualité-container .actualites-cards .actualite-card p {
+  line-height: 1.5;
+}
+.actualites-section .actualité-container .actualites-cards .actualite-card .btn-section {
+  position: absolute;
+  bottom: 0;
+}
+.actualites-section .actualité-container .btn-center {
+  width: 91%;
+  margin: 50px auto;
+}
+
+.systeme-pedagogique-section {
+  margin-top: 70px;
+}/*# sourceMappingURL=index.css.map */

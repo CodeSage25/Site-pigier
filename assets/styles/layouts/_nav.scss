@@ -1,0 +1,55 @@
+nav {
+  #banner {
+    padding-top: 10px;
+    #topBar {
+      .topBar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .topBar-left {
+          img {
+            height: 40px;
+            border-radius: 5px;
+          }
+        }
+        .topBar-right {
+          #connect {
+            padding: 4px 8px;
+          }
+          #langage {
+            margin: 0 5px;
+            #flag {
+              img {
+                height: 10px;
+              }
+            }
+            #country {
+            }
+          }
+        }
+      }
+    }
+  }
+  #navigation {
+    background: $blue2;
+    height: 70px;
+    border-radius: 5px;
+
+    display: flex; // active flex sur le parent
+    justify-content: center; // centre horizontalement
+    align-items: center; // centre verticalement
+
+    .navigation-container {
+      width: 90%;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}

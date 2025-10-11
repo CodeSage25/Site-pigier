@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Pigier Cameroun – L’école du Management, du Digital et de l’Avenir`
+      Pigier Cameroun – L’école du Management, du Digital et de l’Avenir
     </title>
+
+    <link rel="shortcut icon" href="./assets/image/logo-pigier.webp" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,13 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.15.5/css/flag-icons.min.css"
-    />
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
     <nav>
@@ -27,19 +24,27 @@
         <nav id="topBar">
           <div class="topBar-container">
             <div class="topBar-left">
-              <img src="" alt="" />
+              <img src="./assets/image/iuppc.webp" alt="Iuppc-logo" />
             </div>
             <div class="topBar-right">
-              <button id="connect">Connect</button>
+              <button id="connect">
+                <i class="fas fa-sign-out-alt"></i> Connexion
+              </button>
               <span id="langage">
                 <span id="flag">
-                  <img src="./assets/image/image-drapeau-france.webp" alt="" />
+                  <img
+                    src="./assets/image/image-drapeau-france.webp"
+                    alt="francais"
+                  />
                 </span>
                 <span id="country"> FR </span>
               </span>
               <span id="langage">
                 <span id="flag">
-                  <img src="./assets/image/image royaume unis.webp" alt="" />
+                  <img
+                    src="./assets/image/image royaume unis.webp"
+                    alt="anglais"
+                  />
                 </span>
                 <span id="country"> EN </span>
               </span>
@@ -62,29 +67,40 @@
     </nav>
     <header>
       <div class="header-container">
-        <p id="slogan">Le leadership par l’action positive</p>
-        <p id="motivation">
-          Construis ton avenir avec Pigier Cameroun.
-          <br />
-          Rejoins une génération de leaders innovants et responsables.
-        </p>
-        <a href="#formations" class="btn-header">Découvrir nos formations</a>
+        <div class="txt">
+          <div class="txt-container">
+            <h1 id="slogan">Le leadership <br />par l’action positive</h1>
+            <p id="motivation">
+              Construis ton avenir avec Pigier Cameroun.
+              <br />
+              Rejoins une génération de leaders innovants et responsables.
+            </p>
+            <a href="#formations" class="btn-section"
+              >Découvrir nos formations</a
+            >
+          </div>
+        </div>
+        <div id="img"></div>
       </div>
     </header>
 
-    <section id="iiuppc" class="iuppc-section">
+    <section id="iuppc" class="iuppc-section">
       <h2 id="iuppc-title">Découvrez l’IUPPC</h2>
-      <p id="iuppc-intro">
-        L’Institut Universitaire Panafricain Pigier Cameroun (IUPPC) est un
-        établissement d’enseignement supérieur privé spécialisé dans la
-        formation en management, digital, finance et communication.
-      </p>
-      <p id="iuppc-mission">
-        Notre mission est de former des professionnels compétents et
-        responsables, capables de relever les défis économiques et
-        technologiques du monde moderne.
-      </p>
-      <a href="iuppc.html" id="iuppc-btn" class="btn-section">En savoir plus</a>
+      <div class="contain">
+        <p id="iuppc-intro">
+          L’Institut Universitaire Panafricain Pigier Cameroun (IUPPC) est un
+          établissement d’enseignement supérieur privé spécialisé dans la
+          formation en management, digital, finance et communication.
+        </p>
+        <p id="iuppc-mission">
+          Notre mission est de former des professionnels compétents et
+          responsables, capables de relever les défis économiques et
+          technologiques du monde moderne.
+        </p>
+        <a href="iuppc.html" id="iuppc-btn" class="btn-section"
+          >En savoir plus</a
+        >
+      </div>
     </section>
 
     <section id="actualites" class="actualites-section">
@@ -97,7 +113,7 @@
         <div class="actualites-cards">
           <div class="actualite-card" id="actualite-1">
             <div class="image">
-              <img src="" alt="" />
+              <img src="./assets/image/Découvrez le welcome Day.webp" alt="decouvrez le welcome day" />
             </div>
             <h3>Journée Portes Ouvertes 2025</h3>
             <span class="date">12 Novembre 2025</span>
@@ -105,12 +121,12 @@
               Venez découvrir nos formations et rencontrer nos enseignants et
               étudiants lors de notre journée portes ouvertes.
             </p>
-            <a href="actualites.html" class="btn-actualite">Lire la suite</a>
+            <a href="actualites.html" class="btn-section">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
           <div class="actualite-card" id="actualite-2">
             <div class="image">
-              <img src="" alt="" />
+               <img src="./assets/image/Découvrez le welcome Day.webp" alt="decouvrez le welcome day" />
             </div>
             <h3>Lancement du programme Digital Marketing</h3>
             <span class="date">5 Octobre 2025</span>
@@ -118,12 +134,12 @@
               Notre nouveau programme en Digital Marketing est maintenant
               disponible pour tous les étudiants de Pigier Cameroun.
             </p>
-            <a href="actualites.html" class="btn-actualite">Lire la suite</a>
+            <a href="actualites.html" class="btn-section">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
           </div>
 
           <div class="actualite-card" id="actualite-3">
             <div class="image">
-              <img src="" alt="" />
+              <img src="./assets/image/Découvrez le welcome Day.webp" alt="decouvrez le welcome day" />
             </div>
             <h3>Remise des diplômes 2025</h3>
             <span class="date">30 Septembre 2025</span>
@@ -131,7 +147,7 @@
               Félicitations à nos diplômés ! Découvrez les photos et moments
               forts de la cérémonie de remise des diplômes.
             </p>
-            <a href="actualites.html" class="btn-actualite">Lire la suite</a>
+            <a href="actualites.html" class="btn-section">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
@@ -204,7 +220,7 @@
         t’accompagner vers la réussite.
       </p>
 
-      <a href="conseiller.html" class="btn-conseiller"
+      <a href="conseiller.html" class="btn-section"
         >Trouvons ton orientation
       </a>
     </section>
@@ -308,7 +324,7 @@
     </section>
 
     <footer class="footer">
-      <p>Copyright © 2025 – PIGIER CAMEROUN. Tous droits réservés.</p>
+      <p>Copyright © 2025 – PIGIER CAMEROUN | Tous droits réservés.</p>
     </footer>
   </body>
 </html>

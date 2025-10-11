@@ -1,0 +1,48 @@
+.actualites-section {
+  margin-top: 40px;
+
+  #actualites-intro {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .actualité-container {
+    .actualites-cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      margin: 20px auto;
+      .actualite-card {
+        width: 24%;
+        height: 450px;
+        margin: 0 auto;
+        position: relative;
+        .image {
+          img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+        h3 {
+          font-family: poppinsSemibold;
+          padding: 10px 0;
+        }
+        .date {
+          font-family: latoLight;
+        }
+        p {
+          line-height: 1.5;
+        }
+        .btn-section {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+    .btn-center {
+      width: 91%;
+      margin: 50px auto;
+    }
+  }
+}

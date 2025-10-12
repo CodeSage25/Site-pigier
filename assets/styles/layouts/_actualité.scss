@@ -1,5 +1,6 @@
 .actualites-section {
-  margin-top: 40px;
+  max-width: 1300px;
+  margin: 40px auto;
 
   #actualites-intro {
     text-align: center;
@@ -17,6 +18,41 @@
         height: 450px;
         margin: 0 auto;
         position: relative;
+        .actualite-card {
+          position: relative;
+
+          .btn-section {
+            position: relative;
+            display: inline-block;
+            padding: 10px 25px;
+            background: #ffcc00;
+            border-radius: 5px;
+            color: #002b80;
+            font-weight: 500;
+            overflow: hidden;
+            cursor: pointer;
+          }
+
+          .btn-text {
+            position: relative;
+            z-index: 1; /* texte derrière la flèche au départ */
+          }
+
+          .btn-section i {
+            position: absolute;
+            top: 50%;
+            left: 10px; /* position initiale */
+            transform: translateY(-50%);
+            z-index: 0; /* derrière le texte */
+            transition: all 0.4s ease;
+          }
+
+          .btn-section:hover i {
+            left: 50%; /* se déplace au centre du bouton */
+            transform: translate(-50%, -50%); /* centré parfaitement */
+            z-index: 10; /* devant le texte */
+          }
+        }
         .image {
           img {
             object-fit: cover;
@@ -24,10 +60,7 @@
             border-radius: 5px;
           }
         }
-        h3 {
-          font-family: poppinsSemibold;
-          padding: 10px 0;
-        }
+
         .date {
           font-family: latoLight;
         }

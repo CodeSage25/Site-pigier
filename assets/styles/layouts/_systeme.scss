@@ -1,3 +1,70 @@
 .systeme-pedagogique-section {
-  margin-top: 70px;
+  padding: 80px 10%;
+  background: #f9fafb;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Titre principal */
+.systeme-pedagogique-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Ligne décorative sous le titre */
+.systeme-pedagogique-section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* Conteneur des cartes */
+.pedagogique-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Style de chaque carte */
+.pedagogique-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+/* Animation au survol */
+.pedagogique-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+}
+
+/* Sous-titre de chaque carte */
+.pedagogique-card h3 {
+  color: #007bff;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+/* Paragraphe de la carte */
+.pedagogique-card p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Mot en gras dans le texte */
+.pedagogique-card strong {
+  color: #007bff;
 }

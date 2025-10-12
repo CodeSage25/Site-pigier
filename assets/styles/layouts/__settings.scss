@@ -31,10 +31,7 @@ $blue2: rgb(29, 57, 143);
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  max-width: 1300px;
-  margin: 0 auto;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +45,10 @@ h2 {
   padding-bottom: 20px;
   text-align: center;
   font-size: 1.6rem;
+}
+h3 {
+  font-family: poppinsSemibold;
+  padding: 10px 0;
 }
 p {
   font-family: latoRegular;

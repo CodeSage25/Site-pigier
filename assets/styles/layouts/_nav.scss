@@ -1,4 +1,6 @@
 nav {
+  max-width: 1300px;
+  margin: 0 auto;
   #banner {
     padding-top: 10px;
     #topBar {
@@ -35,12 +37,13 @@ nav {
     height: 70px;
     border-radius: 5px;
 
-    display: flex; // active flex sur le parent
-    justify-content: center; // centre horizontalement
-    align-items: center; // centre verticalement
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .navigation-container {
       width: 90%;
+
       ul {
         display: flex;
         justify-content: space-around;
@@ -48,6 +51,38 @@ nav {
 
         li {
           list-style: none;
+
+          a {
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            padding: 10px 15px;
+            transition: all 0.3s ease;
+
+            /* Soulignement invisible par défaut */
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 2px;
+              left: 50%;
+              bottom: 0;
+              background-color: #ffcc00; /* accent doré Pigier */
+              transition: all 0.3s ease;
+            }
+
+            &:hover {
+              color: #ffcc00; /* couleur hover */
+              transform: scale(1.1);
+
+              /* Soulignement qui s'étend au survol */
+              &::after {
+                width: 100%;
+                left: 0;
+              }
+            }
+          }
         }
       }
     }

@@ -1,0 +1,64 @@
+.enseignements-section {
+  padding: 80px 10%;
+  background: #f9fafb;
+  text-align: center;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.enseignements-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.logos-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logos-slide {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll 25s linear infinite;
+}
+
+.logos-slide img {
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.logos-slide img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logos-slide {
+    gap: 40px;
+    animation-duration: 35s;
+  }
+
+  .logos-slide img {
+    height: 45px;
+  }
+}

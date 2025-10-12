@@ -1,0 +1,104 @@
+.contacts-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centre les colonnes horizontalement */
+  gap: 40px; /* espace entre les colonnes */
+  padding: 60px 10px;
+  background-color: #002b80; /* bleu Pigier */
+  color: #fff;
+
+  position: relative;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.contacts-section > div {
+  flex: 1 1 220px; /* colonnes flexibles */
+  margin-bottom: 20px;
+  max-width: 250px; /* pour que les colonnes restent régulières */
+}
+
+/* Titres */
+.contacts-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #fffb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Paragraphes et listes */
+.contacts-section p,
+.contacts-section li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* Liens */
+.contacts-section a {
+  color: #00bfff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacts-section a:hover {
+  color: #ffcc00;
+}
+
+/* Icones */
+.contacts-section i {
+  margin-right: 8px;
+  color: #ffcc00;
+}
+
+/* Listes sans puces */
+.footer-menu ul,
+.formations ul,
+.socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li,
+.formations li,
+.socials li {
+  margin-bottom: 10px;
+}
+
+/* Responsive pour tablette / mobile */
+@media (max-width: 992px) {
+  .contacts-section > div {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .contacts-section > div {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+}
+/* Social icons hover */
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffcc00; /* accent doré */
+  transform: scale(1.2) translateY(-3px); /* grossit et remonte légèrement */
+}
+
+.socials i {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}

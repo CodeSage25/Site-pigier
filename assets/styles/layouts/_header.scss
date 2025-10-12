@@ -1,4 +1,5 @@
 header {
+  max-width: 1300px;
   margin: 40px auto;
 
   .header-container {
@@ -13,12 +14,20 @@ header {
       background: whitesmoke;
 
       .txt-container {
-        h1 {
+        .typing-container {
+          // text-align: center;
+          line-height: 1.4em;
+          position: relative;
+        }
+        h1.text {
           font-family: poppinsbold;
           font-size: 3rem;
           line-height: 1.2;
           padding-bottom: 20px;
+          white-space: pre-line; /* garde les retours à la ligne */
+          margin: 0;
         }
+
         #motivation {
           font-family: latoRegular;
           font-weight: 500;

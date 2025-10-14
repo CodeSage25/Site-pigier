@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités – Pigier Cameroun</title>
+   <link rel="shortcut icon" href="./assets/image/logo-pigier.webp" />
+  <link rel="stylesheet" href="./assets/styles/actualite/actu.css">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+  <header class="header-actualites">
+    <h1>Actualités de Pigier Cameroun</h1>
+    <p>Suivez les dernières nouvelles, événements, programmes et réussites de nos étudiants et enseignants.</p>
+  </header>
+
+  <main class="page-actualites">
+    <!-- Menu de filtres -->
+    <div class="filtres-container">
+      <button class="filtre-btn active" data-filtre="tous">Tous</button>
+      <button class="filtre-btn" data-filtre="evenement">Événements</button>
+      <button class="filtre-btn" data-filtre="formation">Formations</button>
+      <button class="filtre-btn" data-filtre="diplome">Diplômes</button>
+      <button class="filtre-btn" data-filtre="innovation">Innovation</button>
+    </div>
+
+    <section id="liste-actualites" class="liste-actualites">
+      <!-- Cartes injectées par JS -->
+    </section>
+  </main>
+
+  <!-- MODALE -->
+  <div id="modal-actualite" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-image">
+        <img src="" alt="">
+      </div>
+      <h2 class="modal-titre"></h2>
+      <span class="modal-date"></span>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+   <section id="contacts" class="contacts-section">
+      <div class="contact-info">
+        <h3>Nos Contacts</h3>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Pigier Cameroun<br />
+          Quartier Rond-point Maroua, Rue 12, Maroua, Cameroun
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i> +237 6XX XXX XXX<br />
+          <i class="fa-solid fa-mobile"></i> +237 6XX XXX XXX
+        </p>
+        <p>
+          ✉️
+          <a href="mailto:contact@pigiercameroun.com">Envoyez-nous un mail</a>
+        </p>
+      </div>
+
+      <div class="footer-menu">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="iuppc.html">Présentation</a></li>
+          <li><a href="actu.html">Blog</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="privacy.html">Politique de confidentialité</a></li>
+          <li><a href="mentions.html">Mentions légales</a></li>
+        </ul>
+      </div>
+
+      <div class="formations">
+        <h3>Nos Formations</h3>
+        <ul>
+          <li><a href="formation.html?filiere=licence">Licence</a></li>
+          <li><a href="formation.html?filiere=master">Master</a></li>
+          <li><a href="formations.html#certifications">Certifications</a></li>
+        </ul>
+      </div>
+
+      <div class="socials">
+        <h3>Nos Réseaux Sociaux</h3>
+        <ul>
+          <li>
+            <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-square-youtube"></i>YouTube</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-twitter"></i>Twitter</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i>LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Copyright © 2025 – PIGIER CAMEROUN | Tous droits réservés.</p>
+    </footer>
+
+  <script src="actu.js"></script>
+</body>
+</html>

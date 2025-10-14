@@ -1,52 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Actualités – Pigier Cameroun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Parler à un conseiller – Pigier Cameroun</title>
    <link rel="shortcut icon" href="./assets/image/logo-pigier.webp" />
-  <link rel="stylesheet" href="./assets/styles/actualite/actu.css">
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-   <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+
+    <link rel="stylesheet" href="./assets/styles/conseiller/conseiller.css">
 </head>
 <body>
-  <header class="header-actualites">
-    <h1>Actualités de Pigier Cameroun</h1>
-    <p>Suivez les dernières nouvelles, événements, programmes et réussites de nos étudiants et enseignants.</p>
-  </header>
+    <section class="conseillers">
+  <h2>Nos Conseillers</h2>
 
-  <main class="page-actualites">
-    <!-- Menu de filtres -->
-    <div class="filtres-container">
-      <button class="filtre-btn active" data-filtre="tous">Tous</button>
-      <button class="filtre-btn" data-filtre="evenement">Événements</button>
-      <button class="filtre-btn" data-filtre="formation">Formations</button>
-      <button class="filtre-btn" data-filtre="diplome">Diplômes</button>
-      <button class="filtre-btn" data-filtre="innovation">Innovation</button>
-    </div>
-
-    <section id="liste-actualites" class="liste-actualites">
-      <!-- Cartes injectées par JS -->
-    </section>
-  </main>
-
-  <!-- MODALE -->
-  <div id="modal-actualite" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="modal-image">
-        <img src="" alt="">
-      </div>
-      <h2 class="modal-titre"></h2>
-      <span class="modal-date"></span>
-      <p class="modal-description"></p>
-    </div>
+  <!-- Filtres par campus -->
+  <div class="campus-filtres">
+    <button class="campus-btn active" data-campus="tous">Tous</button>
+    <button class="campus-btn" data-campus="Douala">Douala</button>
+    <button class="campus-btn" data-campus="Maroua">Maroua</button>
+    <button class="campus-btn" data-campus="Yaoundé">Yaoundé</button>
   </div>
 
-   <section id="contacts" class="contacts-section">
+  <div class="conseillers-container" id="conseillers-container">
+    
+    <!-- Les cartes seront générées ici par JS -->
+  </div>
+</section>
+<section id="contacts" class="contacts-section">
       <div class="contact-info">
         <h3>Nos Contacts</h3>
         <p>
@@ -71,6 +50,7 @@
           <li><a href="actu.html">Blog</a></li>
           <li><a href="nousContacter.html">Nous contacter</a></li>
           <li><a href="confidentiel.html">Politique de confidentialité</a></li>
+          
         </ul>
       </div>
 
@@ -109,6 +89,7 @@
       <p>Copyright © 2025 – PIGIER CAMEROUN | Tous droits réservés.</p>
     </footer>
 
-  <script src="actu.js"></script>
+
+<script src="./conseiller.js"></script>
 </body>
 </html>

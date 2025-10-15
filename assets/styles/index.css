@@ -613,12 +613,11 @@ header #img {
   -ms-flex-pack: center;
       justify-content: center; /* centre les colonnes horizontalement */
   gap: 40px; /* espace entre les colonnes */
-  padding: 60px 10px;
+  padding: 40px 10px;
   background-color: #002b80; /* bleu Pigier */
   color: #fff;
   position: relative;
   width: 100%;
-  max-width: none;
   box-sizing: border-box;
 }
 
@@ -643,18 +642,18 @@ header #img {
 .contacts-section li {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #fff;
+  color: whitesmoke;
 }
 
 /* Liens */
 .contacts-section a {
-  color: #00bfff;
   text-decoration: none;
   transition: color 0.3s ease;
+  color: rgba(245, 245, 245, 0.6);
 }
 
 .contacts-section a:hover {
-  color: #ffcc00;
+  color: white;
 }
 
 /* Icones */
@@ -707,8 +706,8 @@ header #img {
 }
 
 .socials a:hover {
-  color: #ffcc00; /* accent doré */
-  transform: scale(1.2) translateY(-3px); /* grossit et remonte légèrement */
+  color: white; /* accent doré */
+  transform: scale(1.1) translateY(-3px); /* grossit et remonte légèrement */
 }
 
 .socials i {

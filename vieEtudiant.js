@@ -22,3 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".activite-card").forEach(card => observer.observe(card));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const logo = document.querySelector(".logo img");
+
+  // Effet d'apparition avec délai fluide
+  setTimeout(() => {
+    logo.classList.add("visible");
+  }, 300);
+
+  // Effet "pulse" à chaque clic
+  logo.addEventListener("click", (e) => {
+    e.preventDefault();
+    logo.style.transform = "scale(1.2)";
+    setTimeout(() => {
+      logo.style.transform = "scale(1)";
+      window.location.href = "index.html";
+    }, 250);
+  });
+});

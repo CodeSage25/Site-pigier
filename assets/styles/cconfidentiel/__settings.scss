@@ -1,0 +1,60 @@
+$white: white;
+$whitesmoke: whitesmoke;
+$noir1: rgb(51, 53, 57);
+$blue: rgb(53, 53, 221);
+$blue1: rgb(0, 90, 171);
+$blue2: rgb(29, 57, 143);
+
+@font-face {
+  font-family: poppinsSemibold;
+  src: url(../font/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppinsBold;
+  src: url(../font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: latoBold;
+  src: url(../font/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: latoLight;
+  src: url(../font/Lato-Light.ttf);
+}
+@font-face {
+  font-family: latoRegular;
+  src: url(../font/Lato-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: $whitesmoke;
+  font-family: latoBold;
+}
+h2 {
+  font-family: poppinsSemibold;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+h3 {
+  font-family: poppinsSemibold;
+  padding: 10px 0;
+}
+p {
+  font-family: latoRegular;
+}
+.btn-section {
+  background: $blue1;
+  padding: 15px;
+  border-radius: 10px;
+}

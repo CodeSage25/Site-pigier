@@ -1,5 +1,101 @@
+$white: white;
+$whitesmoke: #f5f5f599;
+$noir1: rgb(51, 53, 57);
+$blue: rgb(53, 53, 221);
+$blue1: rgb(0, 90, 171);
+$blue2: rgb(29, 57, 143);
+
+@font-face {
+  font-family: "poppinsSemibold";
+  src: url(../../font/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppinsBold;
+  src: url(../../font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: latoBold;
+  src: url(../../font/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: latoLight;
+  src: url(../../font/Lato-Light.ttf);
+}
+@font-face {
+  font-family: latoRegular;
+  src: url(../../font/Lato-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: $whitesmoke;
+  font-family: latoBold;
+}
+h2 {
+  font-family: poppinsSemibold;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+h3 {
+  font-family: poppinsSemibold;
+  padding: 10px 0;
+}
+p {
+  font-family: latoRegular;
+}
+.btn-section {
+  background: $blue1;
+  padding: 15px;
+  border-radius: 10px;
+}
+/* === STYLE DU LOGO FIXÉ === */
+nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+}
+
+/* === Effet au survol === */
+.logo img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+/* === Apparition fluide au chargement === */
+.logo img.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 #formations {
-  padding: 100px 8% 250px 8%;
+  padding: 100px 8% 200px 8%;
   text-align: center;
   background: #f9f9f9;
 }
@@ -7,6 +103,7 @@
 #formations h1 {
   font-size: 2.5rem;
   color: #003366;
+  font-family: poppinsSemibold;
 }
 
 .filiere-container {
@@ -58,6 +155,15 @@
   margin-top: 10px;
   border-left: 3px solid #003366;
   padding-left: 10px;
+
+  p {
+    line-height: 2;
+    margin-bottom: 15px;
+  }
+}
+h4 {
+  font-family: latoBold;
+  font-size: 1.2rem;
 }
 
 .btn {
@@ -75,7 +181,7 @@
   flex-wrap: wrap;
   justify-content: center; /* centre les colonnes horizontalement */
   gap: 40px; /* espace entre les colonnes */
-  padding: 10px;
+  padding: 40px 10px;
   background-color: #002b80; /* bleu Pigier */
   color: #fff;
 
@@ -105,18 +211,18 @@
 .contacts-section li {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #fff;
+  color: $whitesmoke;
 }
 
 /* Liens */
 .contacts-section a {
-  color: #00bfff;
   text-decoration: none;
   transition: color 0.3s ease;
+  color: #f5f5f599;
 }
 
 .contacts-section a:hover {
-  color: #ffcc00;
+  color: $white;
 }
 
 /* Icones */
@@ -166,8 +272,8 @@
 }
 
 .socials a:hover {
-  color: #ffcc00; /* accent doré */
-  transform: scale(1.2) translateY(-3px); /* grossit et remonte légèrement */
+  color: $white; /* accent doré */
+  transform: scale(1) translateY(-3px); /* grossit et remonte légèrement */
 }
 
 .socials i {
@@ -176,16 +282,10 @@
 }
 .footer {
   width: 100%;
-  background: rgba(0, 0, 0, 0.692); /* bleu Pigier */
+  background: $noir1; /* bleu Pigier */
   color: #fff;
   text-align: center;
   padding: 10px 0;
   font-size: 0.95rem;
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }

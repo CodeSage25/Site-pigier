@@ -1,15 +1,98 @@
 @charset "UTF-8";
+@font-face {
+  font-family: poppinsSemibold;
+  src: url(../../font/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppinsBold;
+  src: url(../../font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: latoBold;
+  src: url(../../font/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: latoLight;
+  src: url(../../font/Lato-Light.ttf);
+}
+@font-face {
+  font-family: latoRegular;
+  src: url(../../font/Lato-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: latoBold;
+}
+
+h2 {
+  font-family: poppinsSemibold;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-family: poppinsSemibold;
+}
+
+p {
+  font-family: latoRegular;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   background-color: #f8f9fb;
   color: #222;
+}
+
+h1 {
+  font-family: poppinsSemibold;
+}
+
+/* === STYLE DU LOGO FIXÉ === */
+nav {
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+}
+
+/* === Effet au survol === */
+.logo img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.1);
+}
+
+/* === Apparition fluide au chargement === */
+.logo img.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 header.header-actualites {
@@ -62,16 +145,6 @@ header.header-actualites p {
   padding: 20px;
 }
 
-.actualite-card {
-  width: 320px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  padding: 15px;
-  transition: transform 0.3s ease;
-}
-
 .actualite-card:hover {
   transform: translateY(-5px);
 }
@@ -101,18 +174,6 @@ header.header-actualites p {
   line-height: 1.5;
 }
 
-.btn-section {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-align: center;
-      align-items: center;
-  margin-top: 12px;
-  color: #004aad;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
 .btn-section:hover {
   color: #007bff;
 }
@@ -138,11 +199,14 @@ liste-actualites {
 
 .actualite-card {
   width: 30%;
-  background: #fff;
+  min-height: 450px;
+  background: white;
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px;
   position: relative;
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.3s ease;
 }
 
 .actualite-card img {
@@ -154,16 +218,18 @@ liste-actualites {
 
 .btn-section {
   display: inline-block;
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 8px 20px;
-  background: #ffcc00;
   color: #002b80;
   border-radius: 5px;
   text-decoration: none;
+  position: absolute;
+  bottom: 0px;
 }
 
 .btn-section:hover {
-  background: #e6b800;
+  background: whitesmoke;
+  border-radius: 20px;
 }
 
 .modal {
@@ -211,12 +277,12 @@ liste-actualites {
   -ms-flex-pack: center;
       justify-content: center; /* centre les colonnes horizontalement */
   gap: 40px; /* espace entre les colonnes */
-  padding: 60px 10px;
+  padding: 40px 10px;
   background-color: #002b80; /* bleu Pigier */
   color: #fff;
+  margin-top: 40px;
   position: relative;
   width: 100%;
-  max-width: none;
   box-sizing: border-box;
 }
 
@@ -241,18 +307,18 @@ liste-actualites {
 .contacts-section li {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #fff;
+  color: whitesmoke;
 }
 
 /* Liens */
 .contacts-section a {
-  color: #00bfff;
   text-decoration: none;
   transition: color 0.3s ease;
+  color: rgba(245, 245, 245, 0.6);
 }
 
 .contacts-section a:hover {
-  color: #ffcc00;
+  color: white;
 }
 
 /* Icones */
@@ -305,7 +371,7 @@ liste-actualites {
 }
 
 .socials a:hover {
-  color: #ffcc00; /* accent doré */
+  color: white; /* accent doré */
   transform: scale(1.2) translateY(-3px); /* grossit et remonte légèrement */
 }
 
@@ -316,7 +382,7 @@ liste-actualites {
 
 .footer {
   width: 100%;
-  background: rgba(0, 0, 0, 0.758); /* bleu Pigier */
+  background: rgb(51, 53, 57); /* bleu Pigier */
   color: #fff;
   text-align: center;
   padding: 10px 0;

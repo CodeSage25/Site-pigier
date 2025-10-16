@@ -78,3 +78,22 @@ socialLinks.forEach(link => {
   });
 });
 
+// ... votre code existant (typeEffect, etc.) ...
+
+// Carrousel d'images automatique
+const slides = document.querySelectorAll('.img-slide');
+let currentSlide = 0;
+
+function nextSlide() {
+  // Retirer la classe active de l'image actuelle
+  slides[currentSlide].classList.remove('active');
+  
+  // Passer à l'image suivante
+  currentSlide = (currentSlide + 1) % slides.length;
+  
+  // Ajouter la classe active à la nouvelle image
+  slides[currentSlide].classList.add('active');
+}
+
+// Changer d'image toutes les 4 secondes
+setInterval(nextSlide, 4000);

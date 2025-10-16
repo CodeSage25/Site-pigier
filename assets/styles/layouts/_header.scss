@@ -15,7 +15,6 @@ header {
 
       .txt-container {
         .typing-container {
-          // text-align: center;
           line-height: 1.4em;
           position: relative;
         }
@@ -24,7 +23,7 @@ header {
           font-size: 3rem;
           line-height: 1.2;
           padding-bottom: 20px;
-          white-space: pre-line; /* garde les retours à la ligne */
+          white-space: pre-line;
           margin: 0;
         }
 
@@ -36,10 +35,44 @@ header {
       }
     }
   }
-  #img {
-    background: url(../image/ESCM.webp) center/cover;
+
+  // Carrousel d'images
+  .img-carousel {
+    position: relative;
     height: 500px;
     width: 100%;
     border-radius: 5px;
+    overflow: hidden;
+
+    .img-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      border-radius: 5px;
+
+      &.active {
+        opacity: 1;
+        z-index: 1;
+      }
+
+      // Images individuelles
+      &.slide-1 {
+        background-image: url(../image/ESCM.webp);
+      }
+
+      &.slide-2 {
+        background-image: url(../image/ESCM2.jpg);
+      }
+
+      &.slide-3 {
+        background-image: url(../image/vue.webp);
+      }
+    }
   }
 }

@@ -166,7 +166,7 @@ header .header-container .txt .txt-container h1.text {
   font-size: 3rem;
   line-height: 1.2;
   padding-bottom: 20px;
-  white-space: pre-line; /* garde les retours à la ligne */
+  white-space: pre-line;
   margin: 0;
 }
 header .header-container .txt .txt-container #motivation {
@@ -174,11 +174,37 @@ header .header-container .txt .txt-container #motivation {
   font-weight: 500;
   margin-bottom: 70px;
 }
-header #img {
-  background: url(../image/ESCM.webp) center/cover;
+header .img-carousel {
+  position: relative;
   height: 500px;
   width: 100%;
   border-radius: 5px;
+  overflow: hidden;
+}
+header .img-carousel .img-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  border-radius: 5px;
+}
+header .img-carousel .img-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+header .img-carousel .img-slide.slide-1 {
+  background-image: url(../image/ESCM.webp);
+}
+header .img-carousel .img-slide.slide-2 {
+  background-image: url(../image/ESCM2.jpg);
+}
+header .img-carousel .img-slide.slide-3 {
+  background-image: url(../image/vue.webp);
 }
 
 header {
@@ -208,7 +234,7 @@ header .header-container .txt .txt-container h1.text {
   font-size: 3rem;
   line-height: 1.2;
   padding-bottom: 20px;
-  white-space: pre-line; /* garde les retours à la ligne */
+  white-space: pre-line;
   margin: 0;
 }
 header .header-container .txt .txt-container #motivation {
@@ -216,11 +242,37 @@ header .header-container .txt .txt-container #motivation {
   font-weight: 500;
   margin-bottom: 70px;
 }
-header #img {
-  background: url(../image/ESCM.webp) center/cover;
+header .img-carousel {
+  position: relative;
   height: 500px;
   width: 100%;
   border-radius: 5px;
+  overflow: hidden;
+}
+header .img-carousel .img-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  border-radius: 5px;
+}
+header .img-carousel .img-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+header .img-carousel .img-slide.slide-1 {
+  background-image: url(../image/ESCM.webp);
+}
+header .img-carousel .img-slide.slide-2 {
+  background-image: url(../image/ESCM2.jpg);
+}
+header .img-carousel .img-slide.slide-3 {
+  background-image: url(../image/vue.webp);
 }
 
 #iuppc {

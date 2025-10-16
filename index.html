@@ -65,26 +65,32 @@
         </div>
       </nav>
     </nav>
-    <header>
-      <div class="header-container">
-        <div class="txt">
-          <div class="txt-container">
-            <div class="typing-container">
-              <h1 class="text"></h1>
-            </div>
-            <p id="motivation">
-              Construis ton avenir avec Pigier Cameroun.
-              <br />
-              Rejoins une génération de leaders innovants et responsables.
-            </p>
-            <a href="formation.html" class="btn-section"
-              >Découvrir nos formations</a
-            >
-          </div>
+  <header>
+  <div class="header-container">
+    <div class="txt">
+      <div class="txt-container">
+        <div class="typing-container">
+          <h1 class="text"></h1>
         </div>
-        <div id="img"></div>
+        <p id="motivation">
+          Construis ton avenir avec Pigier Cameroun.
+          <br />
+          Rejoins une génération de leaders innovants et responsables.
+        </p>
+        <a href="formation.html" class="btn-section"
+          >Découvrir nos formations</a
+        >
       </div>
-    </header>
+    </div>
+    
+    <!-- Carrousel d'images -->
+    <div class="img-carousel">
+      <div class="img-slide slide-1 active"></div>
+      <div class="img-slide slide-2"></div>
+      <div class="img-slide slide-3"></div>
+    </div>
+  </div>
+</header>
 
     <section id="iuppc" class="iuppc-section">
       <h2 id="iuppc-title">Découvrez l’IUPPC</h2>
@@ -126,10 +132,10 @@
               Venez découvrir nos formations et rencontrer nos enseignants et
               étudiants lors de notre journée portes ouvertes.
             </p>
-   <a href="actu.html" class="btn-section">
-  <span class="btn-text">Lire la suite</span>
-  <i class="fa-solid fa-arrow-right"></i>
-</a>
+            <a href="actu.html" class="btn-section">
+              <span class="btn-text">Lire la suite</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
 
           <div class="actualite-card" id="actualite-2">
@@ -146,9 +152,9 @@
               disponible pour tous les étudiants de Pigier Cameroun.
             </p>
             <a href="actu.html" class="btn-section">
-  <span class="btn-text">Lire la suite</span>
-  <i class="fa-solid fa-arrow-right"></i>
-</a>
+              <span class="btn-text">Lire la suite</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
 
           <div class="actualite-card" id="actualite-3">
@@ -164,19 +170,16 @@
               Félicitations à nos diplômés ! Découvrez les photos et moments
               forts de la cérémonie de remise des diplômes.
             </p>
-           <a href="actu.html" class="btn-section">
-  <span class="btn-text">Lire la suite</span>
-  <i class="fa-solid fa-arrow-right"></i>
-</a>
+            <a href="actu.html" class="btn-section">
+              <span class="btn-text">Lire la suite</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
 
         <!-- Bouton central -->
         <div class="btn-center">
-          <a
-            href="actu.html"
-            id="btn-toutes-actualites"
-            class="btn-section"
+          <a href="actu.html" id="btn-toutes-actualites" class="btn-section"
             >Voir toutes les actualités</a
           >
         </div>
@@ -249,18 +252,45 @@
       <div class="logos-container">
         <div class="logos-slide">
           <img src="./assets/image/Nouveau dossier/Ccima.webp" alt="Ccima" />
-          <img src="./assets/image/Nouveau dossier/cyberli.webp" alt="cyberli" />
-          <img src="./assets/image/Nouveau dossier/Groupement des entreprise.webp" alt="groupement des entreprises" />
-          <img src="./assets/image/Nouveau dossier/institut francais.webp " alt="institut francais" />
-          <img src="./assets/image/Nouveau dossier/labogenie.webp " alt="labogenie" />
-          <img src="./assets/image/Nouveau dossier/microsoft.webp" alt="microsoft" />
-          <img src="./assets/image/Nouveau dossier/minesup.webp" alt="minesup" />
-          <img src="./assets/image/Nouveau dossier/Newyork.webp" alt="Newyork" />
-          <img src="./assets/image/Nouveau dossier/paul valery.webp" alt="paul valery" />
+          <img
+            src="./assets/image/Nouveau dossier/cyberli.webp"
+            alt="cyberli"
+          />
+          <img
+            src="./assets/image/Nouveau dossier/Groupement des entreprise.webp"
+            alt="groupement des entreprises"
+          />
+          <img
+            src="./assets/image/Nouveau dossier/institut francais.webp "
+            alt="institut francais"
+          />
+          <img
+            src="./assets/image/Nouveau dossier/labogenie.webp "
+            alt="labogenie"
+          />
+          <img
+            src="./assets/image/Nouveau dossier/microsoft.webp"
+            alt="microsoft"
+          />
+          <img
+            src="./assets/image/Nouveau dossier/minesup.webp"
+            alt="minesup"
+          />
+          <img
+            src="./assets/image/Nouveau dossier/Newyork.webp"
+            alt="Newyork"
+          />
+          <img
+            src="./assets/image/Nouveau dossier/paul valery.webp"
+            alt="paul valery"
+          />
           <img src="./assets/image/Nouveau dossier/pigier.webp" alt="pigier" />
           <img src="./assets/image/Nouveau dossier/Ta.webp" alt="Ta" />
           <img src="./assets/image/Nouveau dossier/uemoa.webp" alt="uemoa" />
-          <img src="./assets/image/Nouveau dossier/universite de douala.webp" alt="universite de douala" />
+          <img
+            src="./assets/image/Nouveau dossier/universite de douala.webp"
+            alt="universite de douala"
+          />
         </div>
       </div>
     </section>
@@ -285,17 +315,17 @@
         </div>
         <div class="partenaire-card">
           <img src="./assets/image/part/cca bank.webp" alt="cca bank" />
-          <img src="./assets/image/part/cecec.webp" alt="cecec">
-          <img src="./assets/image/part/cnps.webp" alt="cnps">
-          <img src="./assets/image/part/crtv.webp" alt="crtv">
-          <img src="./assets/image/part/etps part.webp" alt="etps part">
-          <img src="./assets/image/part/flexi.webp" alt="flexi">
-          <img src="./assets/image/part/graphic.webp" alt="graphic">
-          <img src="./assets/image/part/mako.webp" alt="mako">
-          <img src="./assets/image/part/part10.webp" alt="part10">
-          <img src="./assets/image/part/part13.webp" alt="part13">
-          <img src="./assets/image/part/part14.webp" alt="part14">
-          <img src="./assets/image/part/part3.webp" alt="part3">
+          <img src="./assets/image/part/cecec.webp" alt="cecec" />
+          <img src="./assets/image/part/cnps.webp" alt="cnps" />
+          <img src="./assets/image/part/crtv.webp" alt="crtv" />
+          <img src="./assets/image/part/etps part.webp" alt="etps part" />
+          <img src="./assets/image/part/flexi.webp" alt="flexi" />
+          <img src="./assets/image/part/graphic.webp" alt="graphic" />
+          <img src="./assets/image/part/mako.webp" alt="mako" />
+          <img src="./assets/image/part/part10.webp" alt="part10" />
+          <img src="./assets/image/part/part13.webp" alt="part13" />
+          <img src="./assets/image/part/part14.webp" alt="part14" />
+          <img src="./assets/image/part/part3.webp" alt="part3" />
         </div>
       </div>
     </section>
@@ -303,25 +333,29 @@
     <section id="contacts" class="contacts-section">
       <div class="contact-info">
         <h3>Nos Contacts</h3>
-        <p>
-          <i class="fa-solid fa-location-dot"></i> Pigier Cameroun<br />
-        </p>
+        <p><i class="fa-solid fa-location-dot"></i> Pigier Cameroun<br /></p>
         <p>
           <i class="fa-solid fa-phone"></i> Douala : (+237) 696 703 976<br />
-          <i class="fa-solid fa-mobile"></i> Yaoundé : (+237) 695 637 923 <br>
-          <i class="fa-solid fa-mobile"></i>  Maroua : (+237) 690 195 405
+          <i class="fa-solid fa-mobile"></i> Yaoundé : (+237) 695 637 923 <br />
+          <i class="fa-solid fa-mobile"></i> Maroua : (+237) 690 195 405
         </p>
         <p>
           ✉️
-          <a href="mailto:pigierdoualae@pigiercam.com">Contacter Pigier Douala</a>
+          <a href="mailto:pigierdoualae@pigiercam.com"
+            >Contacter Pigier Douala</a
+          >
         </p>
-         <p>
+        <p>
           ✉️
-          <a href="mailto:pigieryaounde@pigiercam.com">Contacter Pigier Yaoundé</a>
+          <a href="mailto:pigieryaounde@pigiercam.com"
+            >Contacter Pigier Yaoundé</a
+          >
         </p>
-         <p>
+        <p>
           ✉️
-          <a href="mailto:pigiermaroua@pigiercam.com"> Contacter Pigier Maroua</a>
+          <a href="mailto:pigiermaroua@pigiercam.com">
+            Contacter Pigier Maroua</a
+          >
         </p>
       </div>
 

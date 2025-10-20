@@ -3,7 +3,34 @@ par l’action positive`;
 
 const container = document.querySelector(".text");
 let index = 0;
+// Menu hamburger
+const burger = document.getElementById('burgerBtn');
+const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const menuLinks = menu.querySelectorAll('a');
 
+// Toggle menu au clic sur le burger
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+});
+
+// Fermer le menu en cliquant sur l'overlay
+overlay.addEventListener('click', () => {
+  burger.classList.remove('active');
+  menu.classList.remove('active');
+  overlay.classList.remove('active');
+});
+
+// Fermer le menu en cliquant sur un lien
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('active');
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+});
 function typeEffect() {
   if (index < text.length) {
     const char = text[index] === "\n" ? "<br>" : text[index];
@@ -97,3 +124,4 @@ function nextSlide() {
 
 // Changer d'image toutes les 4 secondes
 setInterval(nextSlide, 4000);
+

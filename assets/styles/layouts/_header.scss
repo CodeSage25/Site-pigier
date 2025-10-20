@@ -1,6 +1,7 @@
 header {
   max-width: 1300px;
   margin: 40px auto;
+  padding: 0 20px;
 
   .header-container {
     display: grid;
@@ -31,6 +32,7 @@ header {
           font-family: latoRegular;
           font-weight: 500;
           margin-bottom: 70px;
+          line-height: 1.6;
         }
       }
     }
@@ -72,6 +74,133 @@ header {
 
       &.slide-3 {
         background-image: url(../image/vue.webp);
+      }
+    }
+  }
+}
+
+// RESPONSIVE - TABLET
+// ========================================
+@media screen and (max-width: 1024px) {
+  header {
+    margin: 30px auto;
+
+    .header-container {
+      gap: 15px;
+
+      .txt {
+        padding: 30px 25px;
+
+        .txt-container {
+          h1.text {
+            font-size: 2.5rem;
+          }
+
+          #motivation {
+            margin-bottom: 50px;
+            font-size: 0.95rem;
+          }
+
+          .btn-section {
+            padding: 12px 25px;
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .img-carousel {
+        height: 450px;
+      }
+    }
+  }
+}
+
+// ========================================
+// RESPONSIVE - MOBILE
+// ========================================
+@media screen and (max-width: 768px) {
+  header {
+    margin: 20px auto;
+    padding: 0 15px;
+
+    .header-container {
+      grid-template-columns: 1fr; // Une seule colonne
+      gap: 20px;
+
+      .txt {
+        padding: 30px 20px;
+        order: 2; // Texte en bas
+
+        .txt-container {
+          text-align: center;
+
+          h1.text {
+            font-size: 2rem;
+            padding-bottom: 15px;
+          }
+
+          #motivation {
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+          }
+
+          .btn-section {
+            padding: 12px 25px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .img-carousel {
+        height: 350px;
+        order: 1; // Image en haut
+      }
+    }
+  }
+}
+
+// ========================================
+// RESPONSIVE - PETITS MOBILES
+// ========================================
+@media screen and (max-width: 480px) {
+  header {
+    margin: 15px auto;
+    padding: 0 10px;
+
+    .header-container {
+      gap: 15px;
+
+      .txt {
+        padding: 25px 15px;
+
+        .txt-container {
+          h1.text {
+            font-size: 1.6rem;
+            line-height: 1.3;
+            padding-bottom: 12px;
+          }
+
+          #motivation {
+            margin-bottom: 30px;
+            font-size: 0.85rem;
+
+            br {
+              display: none; // Retire le saut de ligne sur petit mobile
+            }
+          }
+
+          .btn-section {
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            width: 100%; // Bouton pleine largeur
+            text-align: center;
+          }
+        }
+      }
+
+      .img-carousel {
+        height: 280px;
       }
     }
   }

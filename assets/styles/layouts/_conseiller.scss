@@ -45,6 +45,7 @@
   margin-bottom: 25px;
   position: relative;
   z-index: 1;
+  line-height: 1.3;
 }
 
 /* Paragraphe */
@@ -55,14 +56,16 @@
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  color: #f5f5f5;
+  color: $white;
   position: relative;
   z-index: 1;
 }
 
 /* Bouton principal */
 .btn-section {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   background: white;
   color: #007bff;
   padding: 14px 35px;
@@ -74,6 +77,11 @@
   transition: all 0.3s ease;
   position: relative;
   z-index: 1;
+
+  i {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+  }
 }
 
 /* Effet au survol du bouton */
@@ -82,4 +90,176 @@
   color: #0056b3;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+
+  i {
+    transform: scale(1) rotate(15deg);
+  }
+}
+// ========================================
+// RESPONSIVE - LARGE DESKTOP
+// ========================================
+@media screen and (min-width: 1400px) {
+  .conseiller-section {
+    padding: 120px 10%;
+    margin: 100px auto;
+
+    h2 {
+      font-size: 2.6rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+    }
+
+    .btn-section {
+      padding: 16px 40px;
+      font-size: 1.05rem;
+    }
+  }
+}
+
+// ========================================
+// RESPONSIVE - TABLET (768px - 1024px)
+// ========================================
+@media screen and (max-width: 1024px) {
+  .conseiller-section {
+    padding: 80px 8%;
+    margin: 60px auto;
+    border-radius: 15px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 35px;
+      max-width: 600px;
+    }
+
+    .btn-section {
+      padding: 12px 30px;
+      font-size: 0.95rem;
+
+      i {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// ========================================
+// RESPONSIVE - MOBILE (481px - 768px)
+// ========================================
+@media screen and (max-width: 768px) {
+  .conseiller-section {
+    padding: 60px 6%;
+    margin: 40px 15px;
+    border-radius: 12px;
+
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      max-width: 100%;
+
+      br {
+        display: none; // Supprime le saut de ligne sur mobile
+      }
+    }
+
+    .btn-section {
+      padding: 12px 25px;
+      font-size: 0.9rem;
+      gap: 8px;
+
+      i {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Animation plus lente sur mobile pour économiser la batterie */
+    &::before {
+      animation-duration: 12s;
+    }
+  }
+}
+
+// ========================================
+// RESPONSIVE - PETIT MOBILE (< 480px)
+// ========================================
+@media screen and (max-width: 480px) {
+  .conseiller-section {
+    padding: 50px 5%;
+    margin: 30px 10px;
+    border-radius: 10px;
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 25px;
+      padding: 0 5px;
+    }
+
+    .btn-section {
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      gap: 6px;
+      width: 90%;
+      max-width: 280px;
+      justify-content: center;
+
+      i {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Effet de lueur réduit sur petit mobile */
+    &::before {
+      width: 200%;
+      height: 200%;
+      top: -50%;
+      left: -50%;
+      animation-duration: 15s;
+    }
+  }
+}
+
+// ========================================
+// RESPONSIVE - TRÈS PETIT MOBILE (< 360px)
+// ========================================
+@media screen and (max-width: 360px) {
+  .conseiller-section {
+    padding: 40px 4%;
+    margin: 25px 8px;
+
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+    }
+
+    .btn-section {
+      padding: 10px 18px;
+      font-size: 0.8rem;
+      width: 95%;
+    }
+  }
 }

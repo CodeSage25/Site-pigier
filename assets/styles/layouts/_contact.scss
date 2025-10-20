@@ -83,7 +83,9 @@
 
   .contacts-section > div {
     flex: 1 1 100%;
-    margin-bottom: 30px;
+    margin: 0px auto;
+    //  margin: 0 auto;
+    display: block;
   }
 }
 /* Social icons hover */

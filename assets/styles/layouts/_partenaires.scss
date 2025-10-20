@@ -12,6 +12,10 @@
   color: #002b80;
   margin-bottom: 40px;
   font-weight: 700;
+
+  @media screen and (max-width: 510px) {
+    font-size: 1.8rem;
+  }
 }
 
 .partenaires-grid {

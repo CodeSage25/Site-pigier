@@ -54,43 +54,51 @@
       </nav>
       <nav id="navigation">
         <div class="navigation-container">
-          <ul>
+          <div class="burger" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul id="menu">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="formation.html">Formations</a></li>
             <li><a href="actu.html">Actualités</a></li>
             <li><a href="vieEtudiant.html">Vie Etudiante</a></li>
-
             <li><a href="conseiller.html">Parler à un conseiller</a></li>
           </ul>
         </div>
+        <!-- Overlay pour fermer le menu -->
+        <div class="overlay" id="overlay"></div>
       </nav>
     </nav>
-  <header>
-  <div class="header-container">
-    <div class="txt">
-      <div class="txt-container">
-        <div class="typing-container">
-          <h1 class="text"></h1>
+    <header>
+      <div class="header-container">
+        <div class="txt">
+          <div class="txt-container">
+            <div class="typing-container">
+              <h1 class="text"></h1>
+            </div>
+            <p id="motivation">
+              Construis ton avenir avec Pigier Cameroun.
+              <br />
+              Rejoins une génération de leaders innovants et responsables.
+            </p>
+            <a href="formation.html" class="btn-section"
+              >Découvrir nos formations</a
+            >
+          </div>
         </div>
-        <p id="motivation">
-          Construis ton avenir avec Pigier Cameroun.
-          <br />
-          Rejoins une génération de leaders innovants et responsables.
-        </p>
-        <a href="formation.html" class="btn-section"
-          >Découvrir nos formations</a
-        >
+
+        <!-- Carrousel d'images -->
+        <div class="img-carousel">
+          <div class="img-slide slide-1 active"></div>
+          <div class="img-slide slide-2"></div>
+          <div class="img-slide slide-3"></div>
+        </div>
       </div>
-    </div>
-    
-    <!-- Carrousel d'images -->
-    <div class="img-carousel">
-      <div class="img-slide slide-1 active"></div>
-      <div class="img-slide slide-2"></div>
-      <div class="img-slide slide-3"></div>
-    </div>
-  </div>
-</header>
+    </header>
 
     <section id="iuppc" class="iuppc-section">
       <h2 id="iuppc-title">Découvrez l’IUPPC</h2>

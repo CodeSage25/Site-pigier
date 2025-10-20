@@ -104,6 +104,10 @@ nav {
   font-size: 2.5rem;
   color: #003366;
   font-family: poppinsSemibold;
+
+  @media screen and (max-width: 550px) {
+    font-size: 1.8rem;
+  }
 }
 
 .filiere-container {
@@ -193,7 +197,7 @@ h4 {
 
 .contacts-section > div {
   flex: 1 1 220px; /* colonnes flexibles */
-  margin-bottom: 20px;
+  margin: 0 auto;
   max-width: 250px; /* pour que les colonnes restent régulières */
 }
 

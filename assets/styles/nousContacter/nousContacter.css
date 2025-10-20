@@ -57,16 +57,31 @@ nav {
   margin-bottom: 50px;
   animation: fadeInDown 0.8s ease;
 }
+@media screen and (max-width: 826px) {
+  .header {
+    margin-top: 60px;
+  }
+}
 
 .header h1 {
-  font-size: 3em;
+  font-size: 3rem;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .header p {
   font-size: 1.2em;
   opacity: 0.95;
+}
+@media screen and (max-width: 600px) {
+  .header p {
+    font-size: 1rem;
+  }
 }
 
 .content-wrapper {
@@ -126,13 +141,18 @@ nav {
 }
 
 .campus-card h3 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 600px) {
+  .campus-card h3 {
+    font-size: 1.1rem;
+  }
 }
 
 .campus-card p {
@@ -182,7 +202,12 @@ nav {
 
 .hours-section h3 {
   margin-bottom: 15px;
-  font-size: 1.4em;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 600px) {
+  .hours-section h3 {
+    font-size: 1.1rem;
+  }
 }
 
 .hours-grid {
@@ -202,7 +227,12 @@ nav {
 .form-section h2 {
   color: #1e3c72;
   margin-bottom: 30px;
-  font-size: 2em;
+  font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .form-section h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .form-group {
@@ -382,4 +412,9 @@ textarea {
   -ms-flex-align: center;
       align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 1.4rem;
+  }
 }/*# sourceMappingURL=nousContacter.css.map */

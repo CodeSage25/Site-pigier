@@ -213,7 +213,7 @@ nav {
 .contacts-section > div {
   -ms-flex: 1 1 220px;
       flex: 1 1 220px; /* colonnes flexibles */
-  margin-bottom: 20px;
+  margin: 0 auto;
   max-width: 250px; /* pour que les colonnes restent régulières */
 }
 

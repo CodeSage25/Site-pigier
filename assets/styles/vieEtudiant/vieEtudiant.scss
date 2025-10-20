@@ -107,7 +107,7 @@ nav {
 
 /* 🟦 Bannière */
 .banniere {
-  background: url("assets/image/campus-vie.webp") center/cover no-repeat;
+  background: url("../../image/vue.webp") center/cover;
   height: 60vh;
   position: relative;
   display: flex;
@@ -125,6 +125,13 @@ nav {
 .titre-banniere {
   font-size: 2.5em;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 550px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 490px) {
+    font-size: 1.8rem;
+  }
 }
 @keyframes fadeIn {
   from {
@@ -142,6 +149,10 @@ nav {
   text-align: center;
   padding: 80px 20px;
   background: white;
+
+  p {
+    line-height: 1.5;
+  }
 }
 .jsp-campus {
   display: flex;
@@ -154,7 +165,7 @@ nav {
   background: #f0f3f7;
   border-radius: 15px;
   padding: 20px;
-  width: 250px;
+  // width: 250px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease;
 }
@@ -257,7 +268,7 @@ nav {
 
 .contacts-section > div {
   flex: 1 1 220px; /* colonnes flexibles */
-  margin-bottom: 20px;
+  margin: 0 auto;
   max-width: 250px; /* pour que les colonnes restent régulières */
 }
 

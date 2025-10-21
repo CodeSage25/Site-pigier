@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.classList.add("conseiller-card");
       card.innerHTML = `
         <div class="conseiller-image">
-          <img src="${c.image}" alt="${c.nom}" />
+          <img src="${c.image}" alt="${c.nom}" onerror="this.onerror=null; this.src='/assets/image/conseiller/default.webp';" />
         </div>
         <h3>${c.nom}</h3>
         <p>${c.poste}</p>

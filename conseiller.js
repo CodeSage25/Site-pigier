@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const conseillers = [
     { nom: "Fabrice MONKAM", poste: "Conseiller d'orientation", campus: "Douala", tel: "+237655355391", email: "fabrice.monkam@pigier-cm.com", image: "assets/image/conseiller/codla.webp" },
     { nom: "NGUEND Jonathan", poste: "Conseiller d'orientation", campus: "Maroua", tel: "+237698326662", email: "nguend.jonathan@pigier-cm.com", image: "assets/image/conseiller/comra.webp" },
-    { nom: "KENGNE TAGUETUE Étienne Landri", poste: "Conseiller d'orientation", campus: "Yaoundé", tel: "+237695637923", email: "kengne.tag@pigier-cm.com", image: "assets/image/conseiller/coyde.webp" }
+    { nom: "KENGNE TAGUETUE Étienne Landri", poste: "Conseiller d'orientation", campus: "Yaoundé", tel: "+237695637923", email: "kengne.tag@pigier-cm.com", image: "assets/image/conseiller/coyde.WEBP" }
   ];
 
   const container = document.getElementById("conseillers-container");

@@ -4,31 +4,31 @@ par l’action positive`;
 const container = document.querySelector(".text");
 let index = 0;
 // Menu hamburger
-const burger = document.getElementById('burgerBtn');
-const menu = document.getElementById('menu');
-const overlay = document.getElementById('overlay');
-const menuLinks = menu.querySelectorAll('a');
+const burger = document.getElementById("burgerBtn");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
+const menuLinks = menu.querySelectorAll("a");
 
 // Toggle menu au clic sur le burger
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-  menu.classList.toggle('active');
-  overlay.classList.toggle('active');
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  menu.classList.toggle("active");
+  overlay.classList.toggle("active");
 });
 
 // Fermer le menu en cliquant sur l'overlay
-overlay.addEventListener('click', () => {
-  burger.classList.remove('active');
-  menu.classList.remove('active');
-  overlay.classList.remove('active');
+overlay.addEventListener("click", () => {
+  burger.classList.remove("active");
+  menu.classList.remove("active");
+  overlay.classList.remove("active");
 });
 
 // Fermer le menu en cliquant sur un lien
-menuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    burger.classList.remove('active');
-    menu.classList.remove('active');
-    overlay.classList.remove('active');
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.classList.remove("active");
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
   });
 });
 function typeEffect() {
@@ -40,14 +40,13 @@ function typeEffect() {
   }
 }
 
-
 typeEffect();
 
 const logosSlide = document.querySelector(".logos-slide");
 const clone = logosSlide.cloneNode(true);
 document.querySelector(".logos-container").appendChild(clone);
 
-const grid = document.querySelector('.partenaires-grid');
+const grid = document.querySelector(".partenaires-grid");
 
 // Cloner pour un défilement infini
 const gridClone = grid.cloneNode(true);
@@ -73,19 +72,19 @@ function loop() {
 loop();
 
 // Arrêter le scroll au hover sur n'importe quelle carte
-const cards = document.querySelectorAll('.partenaire-card');
-cards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
+const cards = document.querySelectorAll(".partenaire-card");
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
     currentSpeed = 0; // pause
   });
-  card.addEventListener('mouseleave', () => {
+  card.addEventListener("mouseleave", () => {
     currentSpeed = speed; // reprendre
   });
 });
 
-const socialLinks = document.querySelectorAll('.socials a');
+const socialLinks = document.querySelectorAll(".socials a");
 
-document.addEventListener('mousemove', e => {
+document.addEventListener("mousemove", (e) => {
   const x = e.clientX / window.innerWidth - 0.5; // valeur entre -0.5 et 0.5
   const y = e.clientY / window.innerHeight - 0.5;
 
@@ -96,32 +95,31 @@ document.addEventListener('mousemove', e => {
 });
 
 /* Reset transform au hover pour que l'effet CSS prenne le dessus */
-socialLinks.forEach(link => {
-  link.addEventListener('mouseenter', () => {
-    link.style.transform = 'scale(1.2) translateY(-3px)';
+socialLinks.forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    link.style.transform = "scale(1.2) translateY(-3px)";
   });
-  link.addEventListener('mouseleave', () => {
-    link.style.transform = 'translate(0,0)';
+  link.addEventListener("mouseleave", () => {
+    link.style.transform = "translate(0,0)";
   });
 });
 
 // ... votre code existant (typeEffect, etc.) ...
 
 // Carrousel d'images automatique
-const slides = document.querySelectorAll('.img-slide');
+const slides = document.querySelectorAll(".img-slide");
 let currentSlide = 0;
 
 function nextSlide() {
   // Retirer la classe active de l'image actuelle
-  slides[currentSlide].classList.remove('active');
-  
+  slides[currentSlide].classList.remove("active");
+
   // Passer à l'image suivante
   currentSlide = (currentSlide + 1) % slides.length;
-  
+
   // Ajouter la classe active à la nouvelle image
-  slides[currentSlide].classList.add('active');
+  slides[currentSlide].classList.add("active");
 }
 
 // Changer d'image toutes les 4 secondes
 setInterval(nextSlide, 4000);
-

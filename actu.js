@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const actualites = [
-    { titre: "Journée Portes Ouvertes 2025", date: "12 Novembre 2025", description: "Venez découvrir nos formations et rencontrer nos enseignants et étudiants lors de notre journée portes ouvertes.", image: "assets/image/visite.WEBP", categorie: "evenement" },
-    { titre: "Lancement du programme Digital Marketing", date: "5 Octobre 2025", description: "Notre nouveau programme en Digital Marketing est maintenant disponible pour tous les étudiants de Pigier Cameroun.", image: "assets/image/duos.WEBP", categorie: "formation" },
-    { titre: "Remise des diplômes 2025", date: "30 Septembre 2025", description: "Félicitations à nos diplômés ! Découvrez les photos et moments forts de la cérémonie de remise des diplômes.",  image: "assets/image/sortiePedagogiqueDesAppenants.WEBP", categorie: "diplome" },
-    { titre: "Forum de l’emploi et de l’entrepreneuriat 2025", date: "20 Août 2025", description: "Un forum rassemblant entreprises et jeunes diplômés pour promouvoir l’insertion professionnelle et l’esprit d’entreprise.", image: "assets/image/sortiePedagogiqueDesAppenants.WEBP", categorie: "evenement" },
-    { titre: "Création du Club Innovation Pigier", date: "2 Juillet 2025", description: "Un nouvel espace dédié à la créativité, aux technologies émergentes et à la collaboration entre étudiants innovants.", image: "assets/image/meuf.WEBP", categorie: "innovation" },
-    { titre: "Nouvelle offre de formation continue", date: "10 Juin 2025", description: "Des sessions pour les professionnels souhaitant se perfectionner en management et stratégie digitale.", image: "assets/image/vieEtud.WEBP", categorie: "formation" },
+    { titre: "Journée Portes Ouvertes 2025", date: "12 Novembre 2025", description: "Venez découvrir nos formations et rencontrer nos enseignants et étudiants lors de notre journée portes ouvertes.", image: "assets/image/visite.webp", categorie: "evenement" },
+    { titre: "Lancement du programme Digital Marketing", date: "5 Octobre 2025", description: "Notre nouveau programme en Digital Marketing est maintenant disponible pour tous les étudiants de Pigier Cameroun.", image: "assets/image/duos.webp", categorie: "formation" },
+    { titre: "Remise des diplômes 2025", date: "30 Septembre 2025", description: "Félicitations à nos diplômés ! Découvrez les photos et moments forts de la cérémonie de remise des diplômes.",  image: "assets/image/sortiePedagogiqueDesAppenants.webp", categorie: "diplome" },
+    { titre: "Forum de l’emploi et de l’entrepreneuriat 2025", date: "20 Août 2025", description: "Un forum rassemblant entreprises et jeunes diplômés pour promouvoir l’insertion professionnelle et l’esprit d’entreprise.", image: "assets/image/sortiePedagogiqueDesAppenants.webp", categorie: "evenement" },
+    { titre: "Création du Club Innovation Pigier", date: "2 Juillet 2025", description: "Un nouvel espace dédié à la créativité, aux technologies émergentes et à la collaboration entre étudiants innovants.", image: "assets/image/meuf.webp", categorie: "innovation" },
+    { titre: "Nouvelle offre de formation continue", date: "10 Juin 2025", description: "Des sessions pour les professionnels souhaitant se perfectionner en management et stratégie digitale.", image: "assets/image/vieEtud.webp", categorie: "formation" },
   ];
 
   const container = document.getElementById("liste-actualites");

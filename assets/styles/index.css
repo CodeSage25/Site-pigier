@@ -96,6 +96,7 @@ nav #navigation {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  top: 10px;
 }
 nav #navigation .navigation-container {
   width: 90%;
@@ -313,7 +314,7 @@ header .img-carousel .img-slide.slide-2 {
   background-image: url(../image/ESCM2.jpg);
 }
 header .img-carousel .img-slide.slide-3 {
-  background-image: url(../image/vue.webp);
+  background-image: url(../image/banniere.webp);
 }
 
 @media screen and (max-width: 1024px) {
@@ -477,7 +478,7 @@ header .img-carousel .img-slide.slide-2 {
   background-image: url(../image/ESCM2.jpg);
 }
 header .img-carousel .img-slide.slide-3 {
-  background-image: url(../image/vue.webp);
+  background-image: url(../image/banniere.webp);
 }
 
 @media screen and (max-width: 1024px) {

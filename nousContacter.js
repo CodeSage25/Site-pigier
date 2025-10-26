@@ -8,7 +8,7 @@ form.addEventListener("submit", function (e) {
   e.preventDefault(); // Gardez le preventDefault() pour pouvoir valider en JS
   // --- NOUVEAU/COMPLÉTÉ : RÉ-INTÉGRATION DE LA LOGIQUE DE VALIDATION ---
 
-  const formData = new FormData(form);
+  // const formData = new FormData(form);
   let isValid = true; // Variable de vérification
 
   // 1. Validation de tous les champs remplis

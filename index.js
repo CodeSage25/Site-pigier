@@ -106,20 +106,30 @@ socialLinks.forEach((link) => {
 
 // ... votre code existant (typeEffect, etc.) ...
 
-// Carrousel d'images automatique
+// Carrousel d'images automatique corrigé
 const slides = document.querySelectorAll(".img-slide");
 let currentSlide = 0;
+const totalSlides = slides.length;
+const interval = 4000; // 4 secondes entre chaque image
+const transitionTime = 1500; // correspond à transition CSS (1.5s)
 
-function nextSlide() {
-  // Retirer la classe active de l'image actuelle
-  slides[currentSlide].classList.remove("active");
-
-  // Passer à l'image suivante
-  currentSlide = (currentSlide + 1) % slides.length;
-
-  // Ajouter la classe active à la nouvelle image
-  slides[currentSlide].classList.add("active");
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active", "prev");
+    if (i === index) {
+      slide.classList.add("active");
+    } else if (i === (index - 1 + totalSlides) % totalSlides) {
+      slide.classList.add("prev");
+    }
+  });
 }
 
-// Changer d'image toutes les 4 secondes
-setInterval(nextSlide, 4000);
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+
+// Synchronisation fluide entre transition et intervalle
+setInterval(nextSlide, interval - transitionTime / 2);

@@ -45,22 +45,24 @@ header {
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
+    // background: url(../image/diplome\ dalf.webp) center/cover; /* évite flash blanc si images non chargées */
 
     .img-slide {
       position: absolute;
-      top: 0;
-      left: 0;
+      inset: 0; /* top:0; right:0; bottom:0; left:0; */
       width: 100%;
       height: 100%;
       background-size: cover;
       background-position: center;
       opacity: 0;
-      transition: opacity 1.5s ease-in-out;
+      transition: opacity 1.2s ease-in-out; /* dur. du fondu */
+      z-index: 0;
       border-radius: 5px;
+      will-change: opacity; /* perf */
 
       &.active {
         opacity: 1;
-        z-index: 1;
+        z-index: 2;
       }
 
       // Images individuelles

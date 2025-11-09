@@ -209,3 +209,48 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 250);
   });
 });
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const submitBtn = document.getElementById('submitBtn');
+    const btnText = document.getElementById('btnText');
+    const formStatus = document.getElementById('formStatus');
+    
+    // Désactiver le bouton
+    submitBtn.disabled = true;
+    btnText.textContent = 'Envoi en cours...';
+    
+    try {
+        const formData = new FormData(form);
+        
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        if (response.ok) {
+            // Succès
+            formStatus.style.display = 'block';
+            formStatus.style.backgroundColor = '#d4edda';
+            formStatus.style.color = '#155724';
+            formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Message envoyé avec succès ! Nous vous répondrons bientôt.';
+            form.reset();
+        } else {
+            throw new Error('Erreur lors de l\'envoi');
+        }
+    } catch (error) {
+        // Erreur
+        formStatus.style.display = 'block';
+        formStatus.style.backgroundColor = '#f8d7da';
+        formStatus.style.color = '#721c24';
+        formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Erreur lors de l\'envoi. Veuillez réessayer.';
+    } finally {
+        // Réactiver le bouton
+        submitBtn.disabled = false;
+        btnText.textContent = 'Envoyer le message';
+    }
+});
